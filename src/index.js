@@ -12,6 +12,9 @@ app.set('views', join(__dirname, 'views'))//concatenar carpetas a la ruta absolu
 app.set('view engine', 'ejs')
 app.use(indexRoutes)
 app.use(express.static(join(__dirname, 'public')))
+const dircss = join(__dirname, 'public')
+console.log('La direccion del css es:',dircss )
+
 //app.get('/',(req,res)=> res.render('index'))
 
 
